@@ -1,0 +1,21 @@
+/*
+ * @Author: wdy
+ * @Date: 2019-11-21 15:13:15
+ * @Last Modified by: wdy
+ * @Last Modified time: 2020-05-25 14:20:23
+ */
+@import '../configs/index.less';
+.gradient-primary {
+  background-image: linear-gradient(to bottom, @as-primary-color, @as-blue-7);
+  &:hover {
+    background-image: none;
+    background-color: @as-primary-color;
+  }
+}
+.gradient-error {
+  background-image: linear-gradient(to bottom, fade(@as-error-color, 40), fade(@as-error-color, 40));
+  &:hover {
+    background-image: none;
+    background-color: @as-error-color;
+  }
+}

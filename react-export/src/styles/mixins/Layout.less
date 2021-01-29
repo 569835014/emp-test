@@ -1,0 +1,84 @@
+/*
+ * @Author: wdy
+ * @Date: 2019-10-24 14:47:34
+ * @Last Modified by: wdy
+ * @Last Modified time: 2020-11-26 19:23:36
+ */
+@import '../configs/index.less';
+// 基础容器
+.base-container {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 20px;
+  border: 2px solid fade(@as-primary-color, 40);
+  border-radius: 4px;
+}
+// 高亮-小
+.highlight-small-before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  content: '';
+  transform: translateY(50%);
+  pointer-events: none;
+  border-radius: 50%;
+  background-image: radial-gradient(fade(@as-white, 60), transparent);
+}
+.highlight-small-after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  content: '';
+  transform: translateY(50%);
+  pointer-events: none;
+  border-radius: 50%;
+  background-image: radial-gradient(fade(@as-blue-5, 80), transparent);
+}
+// 小容器
+.aside-container {
+  width: 100%;
+  height: @as-main-height;
+
+  .base-container();
+}
+// 主要容器
+.main-container {
+
+  width: 100%;
+  height: @as-main-height;
+
+  .base-container();
+}
+// 半透明容器
+.translucence-container {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: fade(@as-primary-color, 5);
+}
+// 半透明容器
+.translucence-black-container {
+  padding: 20px;
+  border-radius: 4px;
+  background-color: fade(@as-black, 40);
+}
+// 列表项
+.list-item {
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  &:hover {
+    background-color: fade(@as-white, 10);
+  }
+  &.active-item {
+    background-color: fade(@as-white, 20);
+  }
+  &.disabled-item {
+    cursor: not-allowed;
+  }
+}

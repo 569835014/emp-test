@@ -1,0 +1,23 @@
+/*
+ * @Author: wdy
+ * @Date: 2019-11-21 12:48:57
+ * @Last Modified by: wdy
+ * @Last Modified time: 2020-06-01 14:45:35
+ */
+@dialog-prefix-cls: ~'@{ant-prefix}-modal';
+@table-prefix-cls: ~'@{ant-prefix}-table';
+
+.@{dialog-prefix-cls} {
+  &-content {
+    border: 2px @as-primary-color solid;
+    .box-shadow-lg(@as-primary-color);
+  }
+
+  &-header {
+    border-bottom: none;
+  }
+
+  &-footer {
+    border-top: none;
+  }
+}

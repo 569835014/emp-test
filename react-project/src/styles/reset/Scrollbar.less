@@ -1,0 +1,33 @@
+/*
+ * @Author: wdy
+ * @Date: 2019-10-24 14:47:34
+ * @Last Modified by: wdy
+ * @Last Modified time: 2020-11-26 19:25:15
+ */
+@import '../configs/index.less';
+// 整个滚动条
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+// 滚动条上的按钮 (上下箭头)
+// ::-webkit-scrollbar-button {}
+
+// 滚动条上的滚动滑块
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: @as-primary-color;
+}
+
+// 滚动条轨道
+// ::-webkit-scrollbar-track {}
+// 滚动条没有滑块的轨道部分
+::-webkit-scrollbar-track-piece {
+  background-color: fade(@as-gray-9, 60);
+}
+// // 当同时有垂直滚动条和水平滚动条时交汇的部分
+::-webkit-scrollbar-corner {
+  background-color: fade(@as-gray-9, 60);
+}
+// 某些元素的corner部分的部分样式(例:textarea的可拖动按钮).
+// ::-webkit-resizer {}

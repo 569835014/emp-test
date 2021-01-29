@@ -1,0 +1,25 @@
+/*
+ * @Author: wdy 
+ * @Date: 2019-07-09 10:35:00 
+ * @Last Modified by: wdy
+ * @Last Modified time: 2020-05-14 15:10:42
+ */
+// input focus 重置
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+// 解决谷歌浏览器自动填充的颜色问题
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  transition-delay: 99999s;
+  transition: color 99999s ease-out, background-color 99999s ease-out;
+}

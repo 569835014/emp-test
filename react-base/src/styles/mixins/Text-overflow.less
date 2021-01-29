@@ -1,0 +1,20 @@
+/*
+ * @Author: wdy 
+ * @Date: 2019-07-09 11:42:10 
+ * @Last Modified by: wdy
+ * @Last Modified time: 2019-07-09 11:46:01
+ */
+
+// 多行
+.text-overflow(@lineNum:1) when(@lineNum= 1) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-overflow(@lineNum:1) when not(@lineNum= 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lineNum;
+}

@@ -1,0 +1,46 @@
+/*
+ * @Author: wdy
+ * @Date: 2020-05-27 16:54:21
+ * @Last Modified by: Levi
+ * @Last Modified time: 2020-12-31 14:55:39
+ */
+// Table
+// --
+@table-bg: transparent;
+@table-header-bg: fade(@as-primary-color, 20);
+@table-header-color: @as-primary-color;
+@table-header-sort-bg: transparent;
+@table-body-sort-bg: transparent;
+@table-row-hover-bg: fade(@as-white, 20);
+@table-selected-row-color: inherit;
+@table-selected-row-bg: transparent;
+@table-body-selected-sort-bg: transparent;
+@table-selected-row-hover-bg: transparent;
+@table-expanded-row-bg: #fbfbfb;
+@table-padding-vertical: 16px;
+@table-padding-horizontal: 16px;
+@table-padding-vertical-md: @table-padding-vertical * 3 / 4;
+@table-padding-horizontal-md: @table-padding-horizontal / 2;
+@table-padding-vertical-sm: @table-padding-vertical / 2;
+@table-padding-horizontal-sm: @table-padding-horizontal / 2;
+@table-border-radius-base: @border-radius-base;
+@table-footer-bg: transparent;
+@table-footer-color: @heading-color;
+@table-header-bg-sm: fade(@as-primary-color, 20);
+// Sorter
+// Legacy: `table-header-sort-active-bg` is used for hover not real active
+@table-header-sort-active-bg: transparent;
+// Filter
+@table-header-filter-active-bg: transparent;
+@table-filter-btns-bg: inherit;
+@table-filter-dropdown-bg: transparent;
+@table-expand-icon-bg: transparent;
+@table-selection-column-width: 60px;
+@table-selection-extra-right: 0;
+// 特殊说明
+// table-body-placholder颜色
+@component-background: transparent;
+
+.ant-table-tbody > tr:nth-of-type(odd) > td {
+  background-color: fade(@as-primary-color, 20);
+}
